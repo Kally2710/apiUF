@@ -64,10 +64,10 @@ app.get('/ufs/:iduf', (req, res) => {
 
 //-------------Cria uma instância do aplicativo Express-------------
 
-/*const buscarUfsPorNome = (nomeUf) => {
+const buscarUfsPorNome = (nomeUf) => {
     return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()));
 };
-*/
+
 app.listen(8080, () => {
     let data = new Date();
     console.log('Servidor iniciado na porta 8080 em: ' + data);
